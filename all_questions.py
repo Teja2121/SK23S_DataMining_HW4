@@ -77,26 +77,33 @@ def question8():
     answers = {}
 
 
+    # float
+    answers["(a) P(X_1 = 1 | +)"] = None
+    answers["(a) P(X_1 = 1 | -)"] = None
+    answers["(a) P(X_2 = 1 | +)"] = None
+    answers["(a) P(X_2 = 1 | -)"] = None
+    answers["(a) P(X_3 = 1 | +)"] = None
+    answers["(a) P(X_3 = 1 | -)"] = None
+
+    # string
+    answers["(b) label"] = None
+
+    # float
+    answers["(c) P(X_1=1)"] = None
+    answers["(c) P(X_2=1)"] = None
+    answers["(c) P(X_1=1,X_2=1)"] = None
+
+    # string: "dependent" or "independent"
+    answers["(c) Relationship between X_1 and X_2"] = None
+
+    # float
     answers["(d) P(A=1)"] = None
     answers["(e) P(X_1=1, X_2=1|Class=+)"] = None
     answers["(e) P(X_1=1|Class=+)"] = None
     answers["(e) P(X_2=1|Class=+)"] = None
 
     # string: "yes" or "no"
-    answers["(e) A and B conditionally independent?"] = None
-
-    # float
-    answers["(d) Training error rate"] = None
-
-
-
-    answers["(d) P(A=1)"] = None
-    answers["(d) P(X_1=1, X_2=1|Class=+)"] = None
-    answers["(d) P(X_1=1|Class=+)"] = None
-    answers["(d) P(X_2=1|Class=+)"] = None
-
-    # string: "yes" or "no"
-    answers["(d) A and B conditionally independent?"] = None
+    answers["(e) A and B conditionally independent"] = None
 
     # float
     answers["(d) Training error rate"] = None
