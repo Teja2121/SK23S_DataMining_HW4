@@ -44,9 +44,9 @@ def question3():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
+    answers["(a)"] = "no"
+    answers["(b)"] = "yes"
+    answers["(c)"] = "no"
 
     # explain-string: explanation in english prose
     answers["(a) example"] = None
