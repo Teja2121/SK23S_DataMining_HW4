@@ -122,54 +122,64 @@ def question10():
     answers = {}
 
     # float
-    answers["(a) P(A=1|+)"] = None
-    answers["(a) P(B=1|+)"] = None
-    answers["(a) P(C=1|+)"] = None
-    answers["(a) P(A=1|-)"] = None
-    answers["(a) P(B=1|-)"] = None
-    answers["(a) P(C=1|-)"] = None
+    '''p(+) = 5/10 = 0.5, p(-) = 5/10 = 0.5'''
+    '''p(a = 1|+) = 3/5 = 0.6'''
+    '''p(b = 1|+) = 2/5 = 0.4'''
+    '''p(c = 1|+) = 4/5 = 0.8'''
+    '''p(a = 1|-) = 2/5 = 0.4'''
+    '''p(b = 1|-) = 2/5 = 0.4'''
+    '''p(c = 1|-) = 1/5 = 0.2'''
+    answers["(a) P(A=1|+)"] = 0.6
+    answers["(a) P(B=1|+)"] = 0.4
+    answers["(a) P(C=1|+)"] = 0.8
+    answers["(a) P(A=1|-)"] = 0.4
+    answers["(a) P(B=1|-)"] = 0.4
+    answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = None
+    answers["(a) P(A=1|+) explain your answer"] = "First we have to count the + cases which are 5 (this will be the denominator), now we count how many instances are both 1 and +, which is 3 (this will be the numerator), now we do 3/5 for the case of P(A=1|+) which is 0.6"
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
+    ''' P(R|+) = P(A=1|+) * P(B=1|+) * P(C=1|+) = 0.6 * 0.4 * 0.8 = 0.192
+    P(R|-) = P(A=1|-) * P(B=1|-) * P(C=1|-) = 0.4 * 0.4 * 0.2 = 0.032
+    '''
     answers["(b) P(+|R)"] = None  # WRONG
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    answers["(b) P(R|+)"] = 0.192
+    answers["(b) P(R|-)"] = 0.032
 
     # string, '+' or '-'
-    answers["(b) class label"] = None
+    answers["(b) class label"] = "+"
 
     # explain_string
-    answers["(b) Explain your reasoning"] = None
+    answers["(b) Explain your reasoning"] = "The test sample given was (A = 1, B = 1, C = 1), so there are two class labels to predict (+ or -) which is P(+|R) = ((P(R|+) * P(+)) / P(R)) and P(-|R) = ((P(R|-) * P(-)) / P(R)). But in this case, P(+) and P(-) are the same that is 0.5 and P(R) is constant. So we only have to find P(R|+) and P(R|+) and the greater one among these two will be the class label."
   
     # float
-    answers["(c) P(A=1)"] = None
-    answers["(c) P(B=1)"] = None
-    answers["(c) P(A=1,B=1)"] = None
+    answers["(c) P(A=1)"] = 0.5
+    answers["(c) P(B=1)"] = 0.4
+    answers["(c) P(A=1,B=1)"] = 0.2
 
     # type: string, 'yes' or 'no'
-    answers["(c) A independent of B?"] = None
+    answers["(c) A independent of B?"] = "yes"
   
     # type: float
-    answers["(d) P(A=1)"] = None
-    answers["(d) P(B=0)"] = None
-    answers["(d) P(A=1,B=0)"] = None
+    answers["(d) P(A=1)"] = 0.5
+    answers["(d) P(B=0)"] = 0.6
+    answers["(d) P(A=1,B=0)"] = 0.3
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = None
+    answers["(d) A independent of B?"] = "yes"
   
     # type: float
-    answers["(e) P(A=1,B=1|+)"] = None
-    answers["(e) P(A=1|+)"] = None
-    answers["(e) P(B=1|+)"] = None
+    answers["(e) P(A=1,B=1|+)"] = 0.2
+    answers["(e) P(A=1|+)"] = 0.6
+    answers["(e) P(B=1|+)"] = 0.4
 
     # type: string: 'yes' or 'no'
-    answers["(e) A independent of B given class +?"] = None
+    answers["(e) A independent of B given class +?"] = "no"
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  None
+    answers["(e) A and B conditionally independent given class +, explain"] =  "A and B are not conditonally independent given class B because P(A=1|+) = 0.6 and P(B=1|+) = 0.4 and the product between them is 0.24 but P(A=1,B=1|+) = 0.2 and 0.24 is not equal to 0.2"
   
     return answers
 # --------------------------------------------------------
