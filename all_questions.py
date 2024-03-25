@@ -103,7 +103,7 @@ def question8():
     answers["(e) P(X_2=1|Class=+)"] = None
 
     # string: "yes" or "no"
-    answers["(e) A and B conditionally independent"] = None
+    answers["(e) A and B conditionally independent?"] = None
 
     # float
     answers["(d) Training error rate"] = None
