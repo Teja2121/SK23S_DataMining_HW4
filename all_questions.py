@@ -45,13 +45,13 @@ def question3():
 
     # string "yes" or "no"
     answers["(a)"] = "no"
-    answers["(b)"] = "yes"
-    answers["(c)"] = "no"
+    answers["(b)"] = "no"
+    answers["(c)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = None
-    answers["(b) example"] = None
-    answers["(c) example"] = None
+    answers["(a) example"] = "The rules are not mutually exclusive because if we take the example of pigeon, it is warm blooded which triggers rule R3 and it also triggers rule R1 because give birth = no and aerial creature = yes."
+    answers["(b) example"] = "The rules are not exhaustive because if we take the example of turtle, it is cold blooded, gives birth = no, aerial creature = no and aquatic creature = semi. But there is no rule to classify turtle."
+    answers["(c) example"] = "Ordering is needed because there is overlapping of rules for pigeons and there might be others issues too."
 
     return answers
 # -----------------------------------------------------------
