@@ -8,16 +8,16 @@ def question1():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = "no"
+    answers["(b)"] = "no"
+    answers["(c)"] = "yes"
+    answers["(d)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "No, the rules are not mutually exclusive because if we see the first two rules and if there is a tuple that says homeowner = yes, marital status = single, then that would trigger the first two rules."
+    answers["(b) explain"] = "The rule set is not exhaustive because marital status = divorced is not covered by any of the rule set."
+    answers["(c) explain"] = "Ordering is needed for the given set of rules because we have seen a conflict in part a, so to avoid that ordering is needed for the given rule set."
+    answers["(d) explain"] = "A default class is necessary because the rule set is not exhaustive."
 
     return answers
 
