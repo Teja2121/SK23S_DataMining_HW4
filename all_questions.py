@@ -108,12 +108,12 @@ def question9():
     answers = {}
 
     # int
-    answers["(a) K"] = None
-    answers["(b) K"] = None
+    answers["(a) K"] = 1
+    answers["(b) K"] = 5
 
     # explain_string
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
+    answers["(a) explain"] = "K = 1 is better for a because there is a clear boundary of seperation between the two points. Though there be chance of overfitting, a clear seperation between the points."
+    answers["(b) explain"] = "k = 5 is better for b because taking k = 1 might misclassify some data and k = 50 might be too large of a value and might lead to underfitting."
 
     return answers
 
