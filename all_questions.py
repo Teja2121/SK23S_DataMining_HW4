@@ -61,16 +61,16 @@ def question7():
     answers = {}
 
     # bool: True/False
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = False
+    answers["(b)"] = True
+    answers["(c)"] = False
+    answers["(d)"] = True
 
     # explain_string: explanation in english prose
     answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(b) explain"] = "It is true because ANN model uses feed forward phase where the output of the previous layer would be the input of the next layer."
+    answers["(c) explain"] = "The vanishing gradient problem is related to weight updation of the starting layer of a neural network where the changes made in the weights are really small, which doesn't help with the loss function. This doesn't necessarily mean that the training errors vanish to zero and the testing errors being present. This might be a case of overfitting instead."
+    answers["(d) explain"] = "If "
 
     return answers
 
@@ -79,30 +79,30 @@ def question8():
     answers = {}
 
     # float
-    answers["(a) P(X_1=1)"] = None
-    answers["(a) P(X_2=1)"] = None
-    answers["(a) P(X_1=1,X_2=1)"] = None
+    answers["(a) P(X_1=1)"] = 0.65 # (20+20+8+17) / (20+20+5+5+8+17+8+17) = 65/100 = 0.65
+    answers["(a) P(X_2=1)"] = 0.41 # (20+5+8+8) / (20+20+5+5+8+17+8+17) = 41/100 = 0.41
+    answers["(a) P(X_1=1,X_2=1)"] = 0.28 # (20+8) / (20+20+5+5+8+17+8+17) = 28/100 = 0.28
 
     # string: "dependent" or "independent"
-    answers["(a) Relationship between X_1 and X_2"] = None
+    answers["(a) Relationship between X_1 and X_2"] = "dependent" # because P(X_1=1) * P(X_1=1) = 0.2665 which is not equal to 0.28 which is P(X_1=1,X_2=1)
 
     # string: "yes" or "no"
-    answers["(b) X_1 and X_2 conditionally independent given the class?"] = None
+    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "no"
 
     # float
-    answers["(c) P(X_1=1 | +)"] = None
-    answers["(c) P(X_1=1 | -)"] = None
-    answers["(c) P(X_2=1 | +)"] = None
-    answers["(c) P(X_2=1 | -)"] = None
-    answers["(c) P(X_3=1 | +)"] = None
-    answers["(c) P(X_3=1 | -)"] = None
+    answers["(c) P(X_1=1 | +)"] = 0.8 # (20+20) / (20+20+5+5) = 40/50 = 0.8
+    answers["(c) P(X_1=1 | -)"] = 0.5 # (8+17) / (8+17+8+17) = 25/50 = 0.5
+    answers["(c) P(X_2=1 | +)"] = 0.5 # (20+5) / (20+20+5+5) = 25/50 = 0.5
+    answers["(c) P(X_2=1 | -)"] = 0.32 # (8+8) / (8+17+8+17) = 16/50 = 0.32
+    answers["(c) P(X_3=1 | +)"] = 0.4 # (20) / (20+20+5+5) = 20/50 = 0.4
+    answers["(c) P(X_3=1 | -)"] = 0.16 # (8) / (8+17+8+17) = 8/50 = 0.16
 
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
-    answers["(d) Row 1"] = None
-    answers["(d) Row 2"] = None
-    answers["(d) Row 3"] = None
-    answers["(d) Row 4"] = None
+    answers["(d) Row 1"] = '+'
+    answers["(d) Row 2"] = '+'
+    answers["(d) Row 3"] = '-'
+    answers["(d) Row 4"] = '-'
 
     # float between 0 and 1
     answers["(d) Training error rate"] = None
