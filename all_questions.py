@@ -105,7 +105,8 @@ def question8():
     answers["(d) Row 4"] = '-'
 
     # float between 0 and 1
-    answers["(d) Training error rate"] = None
+    # error rate = (8+17+5+5)/(20+8+20+17+5+8+5+17) = 35/100 = 0.35
+    answers["(d) Training error rate"] = 0.35
 
     return answers
 
