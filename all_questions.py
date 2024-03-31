@@ -84,7 +84,7 @@ def question8():
     answers["(a) P(X_1=1,X_2=1)"] = 0.28 # (20+8) / (20+20+5+5+8+17+8+17) = 28/100 = 0.28
 
     # string: "dependent" or "independent"
-    answers["(a) Relationship between X_1 and X_2"] = "dependent" # because P(X_1=1) * P(X_1=1) = 0.2665 which is not equal to 0.28 which is P(X_1=1,X_2=1)
+    answers["(a) Relationship between X_1 and X_2"] = "dependent" # because P(X_1=1) * P(X_2=1) = 0.2665 which is not equal to 0.28 which is P(X_1=1,X_2=1)
 
     # string: "yes" or "no"
     answers["(b) X_1 and X_2 conditionally independent given the class?"] = "no"
@@ -115,12 +115,12 @@ def question9():
     answers = {}
 
     # int
-    answers["(a) K"] = 1
-    answers["(b) K"] = 5
+    answers["(a) K"] = 5
+    answers["(b) K"] = 50
 
     # explain_string
-    answers["(a) explain"] = "K = 1 is better for a because there is a clear boundary of seperation between the two points. Though there be chance of overfitting, a clear seperation between the points."
-    answers["(b) explain"] = "k = 5 is better for b because taking k = 1 might misclassify some data and k = 50 might be too large of a value and might lead to underfitting."
+    answers["(a) explain"] = "K = 5 is better for a because there is a clear boundary of seperation between the two points. Though there be chance of overfitting, it is lesser than k=1 and a clear seperation between the points can be done with k=5."
+    answers["(b) explain"] = "k = 50 is better for b because taking k = 5 or k = 1 might misclassify some data."
 
     return answers
 
