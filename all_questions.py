@@ -61,15 +61,15 @@ def question7():
     answers = {}
 
     # bool: True/False
-    answers["(a)"] = False
+    answers["(a)"] = True
     answers["(b)"] = True
-    answers["(c)"] = False
+    answers["(c)"] = True
     answers["(d)"] = False
 
     # explain_string: explanation in english prose
-    answers["(a) explain"] = "The gradient of weights of k+1th can't be calculated with the gradient of weights at kth because there will be a change of gradient weight from kth to k+1th layer."
+    answers["(a) explain"] = "The gradient of weights of k+1th can be calculated with the gradient of weights at kth, because this happens in the feed forward phase of backpropagation."
     answers["(b) explain"] = "It is true because ANN model uses feed forward phase where the output of the previous layer would be the input of the next layer."
-    answers["(c) explain"] = "The vanishing gradient problem is related to weight updation of the starting layer of a neural network where the changes made in the weights are really small, which doesn't help with the loss function. This doesn't necessarily mean that the training errors vanish to zero and the testing errors being present. This might be a case of overfitting instead."
+    answers["(c) explain"] = "The vanishing gradient problem is related to weight updation of the starting layer of a neural network where the changes made in the weights are really small, so the error is small for training but testing errors will still be large."
     answers["(d) explain"] = "The gradient of loss might be zero but with respect to weights it might not be zero."
 
     return answers
