@@ -100,13 +100,13 @@ def question8():
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
     answers["(d) Row 1"] = '+'
-    answers["(d) Row 2"] = '+'
+    answers["(d) Row 2"] = '-'
     answers["(d) Row 3"] = '-'
     answers["(d) Row 4"] = '-'
 
     # float between 0 and 1
-    # error rate = (8+17+5+5)/(20+8+20+17+5+8+5+17) = 35/100 = 0.35
-    answers["(d) Training error rate"] = 0.35
+    # error rate = (no.of.clases - no.of.misclassified.classes) / no.of.classes = 1/4 = 0.25
+    answers["(d) Training error rate"] = 0.25
 
     return answers
 
